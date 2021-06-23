@@ -9,6 +9,10 @@ namespace YYX.CATest
     {
         static void Main(string[] args)
         {
+            var joinString = string.Join("abcd", "abcdefg");
+            Console.WriteLine(joinString);
+
+            Console.ReadKey();
         }
     }
 }
