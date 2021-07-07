@@ -10,27 +10,43 @@ namespace YYX.CATest
     {
         static void Main(string[] args)
         {
-            Hello();
+            //TestsRethrow.Main2200();
+
+            //Hello();
+
+            try
+            {
+                Hello();
+            }
+            catch (DivideByZeroException e)
+            {
+                //Console.WriteLine(e);
+                //throw;
+            }
 
             Console.ReadKey();
         }
 
         private static void Hello()
         {
-            Person person = new Person
+            try
             {
-                Age = 18,
-                Name = "YYX",
-                ShippingDate = null,
-            };
+                var i = 1 / int.Parse("0");
 
-            var jsonSerializerSettings = new JsonSerializerSettings
+                //NewMethod();
+            }
+            catch (DivideByZeroException e)
             {
-                NullValueHandling = NullValueHandling.Ignore,
-                DefaultValueHandling = DefaultValueHandling.Ignore
+                //Console.WriteLine(e);
+                throw;
+            }
+        }
 
-            };
-            string serializeObject = JsonConvert.SerializeObject(person, jsonSerializerSettings);
+        private static void NewMethod()
+        {
+            var i = 1 / int.Parse("0");
+
+            //throw new ArithmeticException("illegal expression");
         }
     }
 }
