@@ -10,43 +10,12 @@ namespace YYX.CATest
     {
         static void Main(string[] args)
         {
-            //TestsRethrow.Main2200();
+            DateTime dateTime = DateTime.Parse("7/8/2021 12:00:00 AM");
+            DateTime time = dateTime.AddDays(1).AddSeconds(-1);
 
-            //Hello();
-
-            try
-            {
-                Hello();
-            }
-            catch (DivideByZeroException e)
-            {
-                //Console.WriteLine(e);
-                //throw;
-            }
 
             Console.ReadKey();
         }
 
-        private static void Hello()
-        {
-            try
-            {
-                var i = 1 / int.Parse("0");
-
-                //NewMethod();
-            }
-            catch (DivideByZeroException e)
-            {
-                //Console.WriteLine(e);
-                throw;
-            }
-        }
-
-        private static void NewMethod()
-        {
-            var i = 1 / int.Parse("0");
-
-            //throw new ArithmeticException("illegal expression");
-        }
     }
 }
