@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
@@ -10,12 +11,20 @@ namespace YYX.CATest
     {
         static void Main(string[] args)
         {
-            DateTime dateTime = DateTime.Parse("7/8/2021 12:00:00 AM");
-            DateTime time = dateTime.AddDays(1).AddSeconds(-1);
+            TimeSpan timeSpan = ConvertToTimeSpan(154913);
 
+            string s = 154913.ToString("00:00:00");
 
             Console.ReadKey();
         }
 
+        public static TimeSpan ConvertToTimeSpan(int time)
+        {
+            int hour = time / 10000;
+            int min = (time % 10000) / 100;
+            int sec = (time % 100);
+
+            return new TimeSpan(hour, min, sec);
+        }
     }
 }
