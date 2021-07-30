@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace YYX.CATest
@@ -11,20 +13,15 @@ namespace YYX.CATest
     {
         static void Main(string[] args)
         {
-            TimeSpan timeSpan = ConvertToTimeSpan(154913);
+            DateTime sqlStartDate = DateTime.Parse(@"1/1/1753 12:00:00 AM");
+            DateTime sqlEndDate = DateTime.Parse(@"12/31/9999 11:59:59 PM");
 
-            string s = 154913.ToString("00:00:00");
+            DateTime dateTime = new DateTime(1753, 13, 1);
+
+            DateTime minValue = DateTime.MinValue;
+            DateTime maxValue = DateTime.MaxValue;
 
             Console.ReadKey();
-        }
-
-        public static TimeSpan ConvertToTimeSpan(int time)
-        {
-            int hour = time / 10000;
-            int min = (time % 10000) / 100;
-            int sec = (time % 100);
-
-            return new TimeSpan(hour, min, sec);
         }
     }
 }
