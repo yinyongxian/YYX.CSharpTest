@@ -21,8 +21,6 @@ namespace YYX.CATest
             DateTime minValue = DateTime.MinValue;
             DateTime maxValue = DateTime.MaxValue;
 
-            Console.WriteLine("YYX");
-
             Console.ReadKey();
         }
     }
