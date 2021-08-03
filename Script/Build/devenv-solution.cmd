@@ -1,8 +1,11 @@
+@echo off
 
-devenv.exe "..\..\YYX.CSharpTest.sln" /build "Release|Win64" /project "YYX.CSharpTest\YYX.CATest\YYX.CATest.csproj"
+echo Start Build %date% %time%
+echo Start Build %date% %time%>build.log
 
+devenv.exe ..\..\YYX.CSharpTest.sln  /build Debug
+
+echo End Build  %date% %time%
+echo End Build  %date% %time%>build.log
 
 pause
-
-
-
