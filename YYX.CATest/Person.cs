@@ -7,15 +7,23 @@ namespace YYX.CATest
 {
     public class Person
     {
-        private int age;
         public string Name { get; set; }
 
-        public int Age
+        public int Age { get; set; }
+
+        public override bool Equals(object obj)
         {
-            get { return age; }
-            set { age = value; }
+            return obj is Person person &&
+                   Name == person.Name &&
+                   Age == person.Age;
         }
 
-        public DateTime? ShippingDate { get; set; }
+        public override int GetHashCode()
+        {
+            int hashCode = -1360180430;
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Name);
+            hashCode = hashCode * -1521134295 + Age.GetHashCode();
+            return hashCode;
+        }
     }
 }

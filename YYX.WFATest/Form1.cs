@@ -15,5 +15,25 @@ namespace YYX.WFATest
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (this.Enabled)
+            {
+                this.Enabled = false;
+
+            }
+            else
+            {
+                //this.Activate();
+            }
+
+            this.Activate();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
