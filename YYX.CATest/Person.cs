@@ -5,7 +5,7 @@ using System.Text;
 
 namespace YYX.CATest
 {
-    public class Person
+    public class Person: IHello
     {
         public string Name { get; set; }
 
@@ -24,6 +24,11 @@ namespace YYX.CATest
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Name);
             hashCode = hashCode * -1521134295 + Age.GetHashCode();
             return hashCode;
+        }
+
+        public void Say(string nmae)
+        {
+            throw new NotImplementedException();
         }
     }
 }

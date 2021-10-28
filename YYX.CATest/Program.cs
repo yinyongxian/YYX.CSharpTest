@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -15,13 +17,8 @@ namespace YYX.CATest
     {
         static void Main(string[] args)
         {
-            List<int> list = Enumerable.Range(1, 20).ToList();
-            foreach (var i in list.AsParallel())
-            {
-                Console.WriteLine(i + " Start");
-                Thread.Sleep(100);
-                Console.WriteLine(i + " Complete");
-            }
+            DateTime dateTime = DateTime.Parse("2020-08-21 08:26:51.723");
+            string v = dateTime.ToString("MM:dd:yyyy HH:mm:ss tt");
 
             Console.ReadKey();
         }
