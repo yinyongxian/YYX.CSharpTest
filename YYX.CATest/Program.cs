@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Globalization;
 using System.IO;
@@ -17,8 +18,13 @@ namespace YYX.CATest
     {
         static void Main(string[] args)
         {
-            DateTime dateTime = DateTime.Parse("2020-08-21 08:26:51.723");
-            string v = dateTime.ToString("MM:dd:yyyy HH:mm:ss tt");
+            DataTable dataTable = new DataTable();
+            dataTable.Columns.Add("Column1");
+            DataRow dataRow = dataTable.NewRow();
+            dataRow["Column1"] = 1;
+            dataTable.AcceptChanges();
+
+
 
             Console.ReadKey();
         }
