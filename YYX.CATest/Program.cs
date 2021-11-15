@@ -15,13 +15,10 @@ namespace YYX.CATest
     {
         static void Main(string[] args)
         {
-            List<int> list = Enumerable.Range(1, 20).ToList();
-            foreach (var i in list.AsParallel())
-            {
-                Console.WriteLine(i + " Start");
-                Thread.Sleep(100);
-                Console.WriteLine(i + " Complete");
-            }
+            DateTime startDateTime = DateTime.Parse("2021-11-12 01:29:54.000");
+            DateTime endDateTime = DateTime.Parse("2021-11-12 05:31:39.000");
+            //DateTime.Parse("14505");
+            TimeSpan dateTime = endDateTime - startDateTime;
 
             Console.ReadKey();
         }
