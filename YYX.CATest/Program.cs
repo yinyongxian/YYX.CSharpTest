@@ -15,11 +15,9 @@ namespace YYX.CATest
     {
         static void Main(string[] args)
         {
-            DateTime startDateTime = DateTime.Parse("2021-11-12 01:29:54.000");
-            DateTime endDateTime = DateTime.Parse("2021-11-12 05:31:39.000");
-            //DateTime.Parse("14505");
-            TimeSpan dateTime = endDateTime - startDateTime;
-
+            TimeSpan maxValue = TimeSpan.MaxValue;
+            TimeSpan minValue = TimeSpan.MinValue;
+            TimeSpan zero = TimeSpan.Zero;
             Console.ReadKey();
         }
     }
