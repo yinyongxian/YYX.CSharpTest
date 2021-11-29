@@ -16,25 +16,8 @@ namespace YYX.CATest
     {
         static void Main(string[] args)
         {
-            List<Person> peoples = new List<Person>();
-
-            List<int> list = Enumerable.Range(1, 100000000).ToList();
-
-            Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
-
-            //Person person;
-            foreach (int i in list)
-            {
-                //person = new Person();
-                Person person = new Person();
-                person.Name = i.ToString();
-                peoples.Add(person);
-            }
-            stopwatch.Stop();
-
-            Console.WriteLine(stopwatch.ElapsedMilliseconds);
-
+            string name = null;
+            object name1 = name;
             Console.ReadKey();
         }
     }
