@@ -15,10 +15,12 @@ namespace YYX.CATest
     {
         static void Main(string[] args)
         {
-            TimeSpan maxValue = TimeSpan.MaxValue;
-            TimeSpan minValue = TimeSpan.MinValue;
-            TimeSpan zero = TimeSpan.Zero;
+            DateTime now = DateTime.Now;
+            string v = now.ToString("MM/dd/yyyy");
+            string v1 = now.ToString("hh:mm:ss tt");
+
             Console.ReadKey();
         }
     }
+
 }
