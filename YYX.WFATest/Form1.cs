@@ -33,7 +33,18 @@ namespace YYX.WFATest
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            //textBox1.Enabled = false;
+            //bool textBox1ReadOnly = textBox1.ReadOnly;
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            MessageBox.Show(@"TextBox");
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            MessageBox.Show(@"Form");
         }
     }
 }
