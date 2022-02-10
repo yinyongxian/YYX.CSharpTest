@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28315.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YYX.WFATest", "YYX.WFATest\YYX.WFATest.csproj", "{3E09D3C0-B5AA-4BAB-BB41-4042E03E66ED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YYX.CATest", "YYX.CATest\YYX.CATest.csproj", "{2D7067AC-EC02-4482-95B9-20B368E97B44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YYX.CoreCATest", "YYX.CoreCATest\YYX.CoreCATest.csproj", "{CECF9923-2FEF-4271-BACA-DE10A5AD1DB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2D7067AC-EC02-4482-95B9-20B368E97B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D7067AC-EC02-4482-95B9-20B368E97B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D7067AC-EC02-4482-95B9-20B368E97B44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CECF9923-2FEF-4271-BACA-DE10A5AD1DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CECF9923-2FEF-4271-BACA-DE10A5AD1DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CECF9923-2FEF-4271-BACA-DE10A5AD1DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CECF9923-2FEF-4271-BACA-DE10A5AD1DB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
