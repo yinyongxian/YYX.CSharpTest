@@ -15,9 +15,9 @@ dataTable.Columns.Add("C", typeof(decimal));
 for (int i = 0; i < 5; i++)
 {
     DataRow dataRow = dataTable.NewRow();
-    dataRow["A"] = 1;
-    dataRow["B"] = 2;
-    dataRow["C"] = 3;
+    dataRow["A"] = 1 * i;
+    dataRow["B"] = 2 * i;
+    dataRow["C"] = 3 * i;
     dataTable.Rows.Add(dataRow);
 }
 
