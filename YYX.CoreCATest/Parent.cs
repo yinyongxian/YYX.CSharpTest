@@ -2,13 +2,25 @@
 {
     public class Parent
     {
-        public Parent()
+        private string name;
+        private int age;
+
+        public Parent(string name, int age)
         {
-            DoSomething();
+            this.name = name;
+            this.age = age;
         }
 
-        protected virtual void DoSomething()
+        public string Name
         {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public int Age
+        {
+            get { return age; }
+            set { age = value; }
         }
     }
 }
