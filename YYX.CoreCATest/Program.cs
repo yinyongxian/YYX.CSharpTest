@@ -8,16 +8,7 @@ using YYX.CoreCATest;
 Console.WriteLine("Hello, World!");
 
 
-string[] groupFunctions = Enum.GetNames(typeof(DayOfWeek));
-var query =
-    from groupFunction in groupFunctions
-    select groupFunction.ToString().ToUpper();
-
-DayOfWeek result;
-bool success = Enum.TryParse( "SUNDAY1", true, out result);
-if (success)
-{
-    
-}
+Info info = new Info();
+info.WriteLocation();
 
 Console.ReadKey();
