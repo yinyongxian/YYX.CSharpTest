@@ -2,13 +2,24 @@
 
 using System.Data;
 using System.Diagnostics;
+using System.Linq;
 using System.Text.RegularExpressions;
 using YYX.CoreCATest;
 
-Console.WriteLine("Hello, World!");
+//var name = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+//Console.WriteLine(name);
 
 
-Info info = new Info();
-info.WriteLocation();
+List<string> list = new List<string>
+{
+    "A",
+    "B",
+    "C",
+    "D",
+};
+
+string s = string.Join("\r\n", list);
+
+Console.WriteLine(s);
 
 Console.ReadKey();

@@ -18,8 +18,7 @@ namespace YYX.CATest
         static void Main(string[] args)
         {
 
-            YYX.CoreCATest.Info info = new YYX.CoreCATest.Info();
-            info.WriteLocation();
+
 
             Console.ReadKey();
         }
