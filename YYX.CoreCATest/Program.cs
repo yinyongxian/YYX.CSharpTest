@@ -10,16 +10,7 @@ using YYX.CoreCATest;
 //Console.WriteLine(name);
 
 
-List<string> list = new List<string>
-{
-    "A",
-    "B",
-    "C",
-    "D",
-};
-
-string s = string.Join("\r\n", list);
-
-Console.WriteLine(s);
+var i = 100 / 6;
+var j = 100 * 1m / 6;
 
 Console.ReadKey();
