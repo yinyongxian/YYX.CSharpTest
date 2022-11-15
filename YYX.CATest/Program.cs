@@ -13,15 +13,22 @@ using Newtonsoft.Json;
 
 namespace YYX.CATest
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            System.Console.WriteLine(@"yinyongxian");
-            System.Console.WriteLine(@"dev");
-            
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int number;
+            bool isNumber = int.TryParse("xyz", out number);
+            if (isNumber)
+            {
 
-            Console.ReadKey();
-        }
-    }
+            }
+            else
+            {
+
+            }
+			
+			Console.ReadKey();
+		}
+	}
 }

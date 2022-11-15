@@ -6,20 +6,18 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using YYX.CoreCATest;
 
-//var name = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-//Console.WriteLine(name);
 
 
-List<string> list = new List<string>
-{
-    "A",
-    "B",
-    "C",
-    "D",
-};
+DataTable dataTable = new DataTable();
+dataTable.Columns.Add("Name", typeof(string));
+dataTable.Columns.Add("Age", typeof(int));
+DataRow dataRow = dataTable.NewRow();
+dataRow[0] = "YYX";
+dataRow[1] = 18;
 
-string s = string.Join("\r\n", list);
+dataTable.Rows.Add(dataRow);
+dataRow.Delete();
 
-Console.WriteLine(s);
+dataRow.AcceptChanges();
 
-Console.ReadKey();
+Console.ReadLine();
