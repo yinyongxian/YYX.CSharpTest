@@ -17,7 +17,7 @@ namespace YYX.WFATest
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             if (this.Enabled)
             {
@@ -34,16 +34,10 @@ namespace YYX.WFATest
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            EventInfo eventInfo = textBox1.GetType().GetEvent("ReadOnlyChanged");
-            if (eventInfo != null)
-            {
-                Delegate.CreateDelegate(textBox1, eventHandler);
-                Delegate handler = Delegatt;
-                eventInfo.AddEventHandler(textBox1, handler);
-            }
+
         }
 
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        private void TextBox1_KeyDown(object sender, KeyEventArgs e)
         {
             MessageBox.Show(@"TextBox");
         }
