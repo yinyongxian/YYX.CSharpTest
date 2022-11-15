@@ -9,9 +9,12 @@ using System.Threading.Channels;
 using YYX.CoreCATest;
 
 
-var toBoolean1 = Convert.ToBoolean(-1);
-var toBoolean2 = Convert.ToBoolean(0);
-var toBoolean3 = Convert.ToBoolean(1);
+var person = new Person("YYX", 18);
+ChangePerson(person);
 
 Console.ReadKey();
 
+void ChangePerson(Person person)
+{
+    person.Age = 19;
+}
