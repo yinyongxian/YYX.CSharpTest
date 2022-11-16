@@ -8,16 +8,8 @@ using YYX.CoreCATest;
 
 
 
-DataTable dataTable = new DataTable();
-dataTable.Columns.Add("Name", typeof(string));
-dataTable.Columns.Add("Age", typeof(int));
-DataRow dataRow = dataTable.NewRow();
-dataRow[0] = "YYX";
-dataRow[1] = 18;
+ string text = "22/11/2009";
 
-dataTable.Rows.Add(dataRow);
-dataRow.Delete();
-
-dataRow.AcceptChanges();
+DateTime date = DateTime.ParseExact(text, "dd/MM/yyyy", null);
 
 Console.ReadLine();

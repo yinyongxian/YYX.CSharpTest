@@ -15,18 +15,11 @@ namespace YYX.CATest
 {
 	class Program
 	{
-		static void Main(string[] args)
-		{
-			int number;
-            bool isNumber = int.TryParse("xyz", out number);
-            if (isNumber)
-            {
+#pragma warning disable IDE0060 // Remove unused parameter
+        static void Main(string[] args)
+#pragma warning restore IDE0060 // Remove unused parameter
+        {
 
-            }
-            else
-            {
-
-            }
 			
 			Console.ReadKey();
 		}
