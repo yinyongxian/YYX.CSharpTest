@@ -20,6 +20,9 @@ namespace YYX.CATest
 #pragma warning restore IDE0060 // Remove unused parameter
         {
 
+            string name = "YYX";
+            name = "Name changed.";
+            Console.WriteLine(name);
 			
 			Console.ReadKey();
 		}

@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YYX.CATest", "YYX.CATest\YY
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YYX.CoreCATest", "YYX.CoreCATest\YYX.CoreCATest.csproj", "{CECF9923-2FEF-4271-BACA-DE10A5AD1DB5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YYX.CoreCATestTests", "YYX.CoreCATestTests\YYX.CoreCATestTests.csproj", "{F66900DF-28AB-4F50-943A-7BC7EBEFC7D1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{CECF9923-2FEF-4271-BACA-DE10A5AD1DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CECF9923-2FEF-4271-BACA-DE10A5AD1DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CECF9923-2FEF-4271-BACA-DE10A5AD1DB5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F66900DF-28AB-4F50-943A-7BC7EBEFC7D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F66900DF-28AB-4F50-943A-7BC7EBEFC7D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F66900DF-28AB-4F50-943A-7BC7EBEFC7D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F66900DF-28AB-4F50-943A-7BC7EBEFC7D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
