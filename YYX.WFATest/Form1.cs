@@ -34,13 +34,7 @@ namespace YYX.WFATest
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            EventInfo eventInfo = textBox1.GetType().GetEvent("ReadOnlyChanged");
-            if (eventInfo != null)
-            {
-                Delegate.CreateDelegate(textBox1, eventHandler);
-                Delegate handler = Delegatt;
-                eventInfo.AddEventHandler(textBox1, handler);
-            }
+
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)

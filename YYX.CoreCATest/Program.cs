@@ -4,17 +4,16 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading.Channels;
 using YYX.CoreCATest;
 
 
-var person = new Person("YYX", 18);
-ChangePerson(person);
+string name = null;
+string format = string.Format("{0} : {1}", name, 18);
 
 Console.ReadKey();
 
-void ChangePerson(Person person)
-{
-    person.Age = 19;
-}
+
+
