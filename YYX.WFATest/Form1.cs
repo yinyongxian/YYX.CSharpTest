@@ -17,7 +17,7 @@ namespace YYX.WFATest
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             if (this.Enabled)
             {
@@ -37,7 +37,7 @@ namespace YYX.WFATest
 
         }
 
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        private void TextBox1_KeyDown(object sender, KeyEventArgs e)
         {
             MessageBox.Show(@"TextBox");
         }

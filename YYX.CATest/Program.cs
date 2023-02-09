@@ -13,15 +13,15 @@ using Newtonsoft.Json;
 
 namespace YYX.CATest
 {
-    class Program
-    {
+	class Program
+	{
+#pragma warning disable IDE0060 // Remove unused parameter
         static void Main(string[] args)
+#pragma warning restore IDE0060 // Remove unused parameter
         {
-            System.Console.WriteLine(@"yinyongxian");
-            System.Console.WriteLine(@"dev");
-            
 
-            Console.ReadKey();
-        }
-    }
+			
+			Console.ReadKey();
+		}
+	}
 }
