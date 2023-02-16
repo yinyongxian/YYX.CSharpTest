@@ -6,13 +6,9 @@ using System.Text;
 
 namespace YYX.CATest
 {
-    public class Parent
+    public class Person
     {
         public string Name { get; set; }
-    }
-
-    public class Child
-    {
-        public string Name { get; set; }
+        public int Age { get; set; }
     }
 }

@@ -19,12 +19,24 @@ namespace YYX.CATest
         static void Main(string[] args)
 #pragma warning restore IDE0060 // Remove unused parameter
         {
+            var person = new Person
+            {
+                Name = "0123456789",
+                Age =18
+            };
 
-            string name = "YYX";
-            name = "Name changed.";
-            Console.WriteLine(name);
-			
-			Console.ReadKey();
+
+            for (int i = 1; i <= 3; i++)
+            {
+                Foo(i, ref person);
+            }
+
+            Console.ReadKey();
 		}
-	}
+
+        private static void Foo(int i, ref Person person)
+        {
+            string substring = person.Name.Substring(i * 3 - 3, 3);
+        }
+    }
 }
