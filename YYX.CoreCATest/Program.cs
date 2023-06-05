@@ -10,8 +10,10 @@ using System.Threading.Channels;
 using YYX.CoreCATest;
 
 
-string name = null;
-string format = string.Format("{0} : {1}", name, 18);
+int[][] ints = new int[3][];
+var y = new int[3,5];
+
+System.Console.WriteLine("YYX");
 
 Console.ReadKey();
 
