@@ -17,9 +17,7 @@ namespace YYX.CATest
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine(@"yinyongxian");
-            System.Console.WriteLine(@"dev");
-            
+   
 
             Console.ReadKey();
         }

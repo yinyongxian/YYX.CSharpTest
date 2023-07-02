@@ -6,20 +6,24 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using YYX.CoreCATest;
 
-//var name = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-//Console.WriteLine(name);
 
 
-List<string> list = new List<string>
-{
-    "A",
-    "B",
-    "C",
-    "D",
-};
+Hello("YYX");
 
-string s = string.Join("\r\n", list);
 
-Console.WriteLine(s);
 
 Console.ReadKey();
+
+static void Hello(string text) 
+{
+    if (string.IsNullOrWhiteSpace(text))
+    {
+        return;
+    }
+
+    var index = text.IndexOf("Y", StringComparison.Ordinal);
+    var length = text.Length;
+
+    Console.WriteLine(index);
+    Console.WriteLine(length);
+}
