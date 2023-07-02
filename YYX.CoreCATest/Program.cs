@@ -8,22 +8,15 @@ using YYX.CoreCATest;
 
 
 
-Hello("YYX");
+Hello();
 
 
 
 Console.ReadKey();
 
-static void Hello(string text) 
+static void Hello()
 {
-    if (string.IsNullOrWhiteSpace(text))
-    {
-        return;
-    }
-
-    var index = text.IndexOf("Y", StringComparison.Ordinal);
-    var length = text.Length;
-
-    Console.WriteLine(index);
-    Console.WriteLine(length);
+    dynamic person = new Person(18, "YYX");
+    Console.WriteLine(person.Name);
+    Console.WriteLine(person.Sex);
 }
