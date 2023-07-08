@@ -19,4 +19,4 @@ static void Hello()
     dynamic person = new Person(18, "YYX");
     Console.WriteLine(person.Name);
     Console.WriteLine(person.Sex);
-}
+} 
