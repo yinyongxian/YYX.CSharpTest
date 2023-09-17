@@ -19,10 +19,10 @@ namespace YYX.CoreCATest
         public int Id { get; init; }
         public string Name { get; set; }
 
-
         public void Speak()
         {
             Console.WriteLine("This is YYX. ");
         }
     }
 }
+ 

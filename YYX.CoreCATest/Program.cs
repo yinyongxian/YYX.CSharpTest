@@ -10,13 +10,19 @@ using YYX.CoreCATest;
 
 Hello();
 
-
-
 Console.ReadKey();
 
 static void Hello()
 {
-    dynamic person = new Person(18, "YYX");
+    Person person = new Person(18, "YYX")
+    {
+        Id = 1,
+        Name = "YYX"
+    };
+
+
+    var dog =  new Dog("Yellow Dog");
+
     Console.WriteLine(person.Name);
-    Console.WriteLine(person.Sex);
-} 
+
+}
