@@ -10,10 +10,16 @@ using System.Threading.Channels;
 using YYX.CoreCATest;
 
 
-int[][] ints = new int[3][];
-var y = new int[3,5];
+//using (var streamWriter = new StreamWriter(@"D:\tcm\v103_data1\dc\dcptrx.tst"))
+//{
+//    Console.WriteLine("YYX");
+//}
 
-System.Console.WriteLine("YYX");
+using (var fileStream = File.Open(@"D:\tcm\v103_data1\dc\dcptrx.tst", FileMode.Open))
+{
+    Console.WriteLine("YYX");
+}
+
 
 Console.ReadKey();
 
