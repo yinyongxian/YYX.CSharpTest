@@ -20,9 +20,13 @@ static void Hello()
         Name = "YYX"
     };
 
+    var dog = new Dog("");
+    DateTime startTime = new DateTime();
+    DateTime endTime = new DateTime().AddDays(1);
 
-    var dog =  new Dog("Yellow Dog");
+    Dog.GetDog(new DateRange(startTime, endTime));
 
     Console.WriteLine(person.Name);
 
 }
+
