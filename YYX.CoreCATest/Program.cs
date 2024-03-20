@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
@@ -10,12 +11,30 @@ using System.Threading.Channels;
 using YYX.CoreCATest;
 
 
-int[][] ints = new int[3][];
-var y = new int[3,5];
+var fileExtendions = new List<string>();
+var directoryInfo = new DirectoryInfo("D:\\tcm\\v103_tcm\\dbl\\std");
 
-System.Console.WriteLine("YYX");
+CollectFileExtensions(directoryInfo, fileExtendions);
 
-Console.ReadKey();
+return;
 
+void CollectFileExtensions(DirectoryInfo directoryInfo, List<string> fileExtendions)
+{
+    if (directoryInfo == null || fileExtendions == null)
+    {
+        return;
+    }
 
+    foreach (var directory in directoryInfo.GetDirectories())
+    {
+        CollectFileExtensions(directory, fileExtendions);
+    }
 
+    foreach (var fileInfo in directoryInfo.GetFiles())
+    {
+        if (!fileExtendions.Contains(fileInfo.Extension))
+        {
+            fileExtendions.Add(fileInfo.Extension);
+        }
+    }
+}
