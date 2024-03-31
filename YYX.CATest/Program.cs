@@ -36,7 +36,7 @@ namespace YYX.CATest
 
         private static void Foo(int i, ref Person person)
         {
-            string substring = person.Name.Substring(i * 3 - 3, 3);
+            var substring = person.Name.Substring(i * 3 - 3, 3);
         }
     }
 }

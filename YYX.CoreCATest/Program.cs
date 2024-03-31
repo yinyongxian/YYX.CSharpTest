@@ -18,12 +18,13 @@ CollectFileExtensions(directoryInfo, fileExtendions);
 
 return;
 
-void CollectFileExtensions(DirectoryInfo directoryInfo, List<string> fileExtendions)
+static void CollectFileExtensions(DirectoryInfo directoryInfo, List<string> fileExtendions)
 {
-    if (directoryInfo == null || fileExtendions == null)
+    if (fileExtendions == null)
     {
-        return;
+        throw new ArgumentNullException(nameof(fileExtendions));
     }
+
 
     foreach (var directory in directoryInfo.GetDirectories())
     {
