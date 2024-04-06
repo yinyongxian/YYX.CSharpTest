@@ -12,7 +12,7 @@ using YYX.CoreCATest;
 
 
 var fileExtendions = new List<string>();
-var directoryInfo = new DirectoryInfo("D:\\tcm\\v103_tcm\\dbl\\std");
+var directoryInfo = new DirectoryInfo(@"D:\tcm\v103_tcm\dbl\std");
 
 CollectFileExtensions(directoryInfo, fileExtendions);
 
