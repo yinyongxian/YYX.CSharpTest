@@ -26,10 +26,6 @@ static void CollectFileExtensions(DirectoryInfo directoryInfo, List<string> file
         throw new ArgumentNullException(nameof(fileExtensions));
     }
 
-
-
-
-
     foreach (var directory in directoryInfo.GetDirectories())
     {
         CollectFileExtensions(directory, fileExtensions);
