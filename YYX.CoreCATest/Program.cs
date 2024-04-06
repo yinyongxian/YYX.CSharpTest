@@ -18,24 +18,24 @@ CollectFileExtensions(directoryInfo, fileExtendions);
 
 return;
 
-static void CollectFileExtensions(DirectoryInfo directoryInfo, List<string> fileExtendions)
+static void CollectFileExtensions(DirectoryInfo directoryInfo, List<string> fileExtensions)
 {
-    if (fileExtendions == null)
+    if (fileExtensions == null)
     {
-        throw new ArgumentNullException(nameof(fileExtendions));
+        throw new ArgumentNullException(nameof(fileExtensions));
     }
 
 
     foreach (var directory in directoryInfo.GetDirectories())
     {
-        CollectFileExtensions(directory, fileExtendions);
+        CollectFileExtensions(directory, fileExtensions);
     }
 
     foreach (var fileInfo in directoryInfo.GetFiles())
     {
-        if (!fileExtendions.Contains(fileInfo.Extension))
+        if (!fileExtensions.Contains(fileInfo.Extension))
         {
-            fileExtendions.Add(fileInfo.Extension);
+            fileExtensions.Add(fileInfo.Extension);
         }
     }
 }
