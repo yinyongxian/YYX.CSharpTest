@@ -14,6 +14,7 @@ using YYX.CoreCATest;
 var fileExtensions = new List<string>();
 var directoryInfo = new DirectoryInfo(@"D:\tcm\v103_tcm\dbl\std");
 
+
 CollectFileExtensions(directoryInfo, fileExtensions);
 
 return;
@@ -24,6 +25,9 @@ static void CollectFileExtensions(DirectoryInfo directoryInfo, List<string> file
     {
         throw new ArgumentNullException(nameof(fileExtensions));
     }
+
+
+
 
 
     foreach (var directory in directoryInfo.GetDirectories())
